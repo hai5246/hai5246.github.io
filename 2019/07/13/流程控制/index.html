@@ -40,7 +40,7 @@
         else {
             语句体n+1;
         }</code></pre><p>执行流程：<br>&emsp;&emsp;首先计算判断体1看其返回值是true还是false，<br>&emsp;&emsp;如果是true，就执行语句体1，if语句结束。<br>&emsp;&emsp;如果是false，接着计算判断体2看其返回值是true还是false，<br>&emsp;&emsp;如果是true，就执行语句体2，if语句结束。<br>&emsp;&emsp;如果是false，接着计算判断体3看其返回值是true还是false，<br>&emsp;&emsp;如果都是false，就执行语句体n+1</p>
-<p>案例：<br>1.判断闰年<br><img src="/2019/07/13/流程控制/p1.png" alt><br>2.判断输入的成绩<br><img src="/2019/07/13/流程控制/p2.png" alt><br><code>注意：else作用一般用于对范围外的错误值提示</code><br>3.BMI的计算公式是 体重(kg) / (身高*身高)<br><img src="/2019/07/13/流程控制/p3.png" alt><br><img src="/2019/07/13/流程控制/p4.png" alt></p>
+<p>案例：<br>1.判断闰年<br><img src="/2019/07/13/流程控制/流程控制/p1.jpg" align="left"><br>2.判断输入的成绩<br><img src="/2019/07/13/流程控制/流程控制/p2.jpg" align="left"><br><code>注意：else作用一般用于对范围外的错误值提示</code><br>3.BMI的计算公式是 体重(kg) / (身高*身高)<br><img src="/2019/07/13/流程控制/流程控制/p3.jpg" align="left"><br><img src="/2019/07/13/流程控制/流程控制/p4.jpg" align="left"></p>
 <h5 id="2-switch-语句"><a href="#2-switch-语句" class="headerlink" title="2) switch 语句"></a>2) switch 语句</h5><pre><code>switch(表达式) {
               case 值1：
             语句体1;
@@ -53,7 +53,7 @@
             语句体n+1;
             break;
         }</code></pre><p>执行流程<br>&emsp;&emsp;先计算表达式的值（整形值或Sting类型）<br>&emsp;&emsp;然后和case后面的值匹配，如果有就执行对应的语句，否则执行default控制的语句</p>
-<p>案例：<br>1.判断季节<br><img src="/2019/07/13/流程控制/p5.png" alt><br>2.判断成绩<br><img src="/2019/07/13/流程控制/p6.png" alt><br><code>注意：
+<p>案例：<br>1.判断季节<br><img src="/2019/07/13/流程控制/流程控制/p5.jpg" align="left"><br>2.判断成绩<br><img src="/2019/07/13/流程控制/流程控制/p6.jpg" align="left"><br><code>注意：
 ① 表达式可以是byte、short、int、char、枚举类型。JDK1.7以后，可使用String类型。
 ② case语句后面只能使用常量表达式；且case后的值不能重复。
 ③ 某个case分支如果没有提供break语句，则继续执行下一个case后的语句。</code></p>
@@ -88,7 +88,8 @@ while(判断体语句) {
 <p>案例：<br>1.九九乘法表</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//九九乘法表</span><br><span class="line">for(int i=1; i&lt;10; i++)&#123;</span><br><span class="line">	for(int j = 1; j &lt; 10; j++)&#123;</span><br><span class="line">	if(i&gt;=j)</span><br><span class="line">	System.out.print(j+&quot;*&quot;+i+&quot;=&quot;+i*j+&quot;  &quot;);</span><br><span class="line">	&#125;</span><br><span class="line">	System.out.println(&quot;&quot;);			</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2019/07/13/流程控制/p7.jpg" alt></p>
+<img src="/2019/07/13/流程控制/流程控制/p7.jpg" align="left">
+
 <p>2.输出*直角三角形</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">*</span><br><span class="line">**</span><br><span class="line">***</span><br></pre></td></tr></table></figure>
 
@@ -107,7 +108,8 @@ while(判断体语句) {
 <p>(2) return和break以及continue的区别<br>&emsp;&emsp;return是结束方法<br>&emsp;&emsp;break是退出当前整个循环<br>&emsp;&emsp;continue是终止本次循环继续下次循环</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">public class Control&#123;</span><br><span class="line">	public static void main(String [] args)&#123;</span><br><span class="line">		//break在循环中的作用</span><br><span class="line">		//输出1-10，但到4执行break</span><br><span class="line">		for(int a = 1; a&lt;=10; a++)&#123;</span><br><span class="line">			System.out.print(a);</span><br><span class="line">			if(a == 4)&#123;break;&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println();</span><br><span class="line">		System.out.println(&quot;------------------------&quot;);</span><br><span class="line">		//continue在循环中的作用</span><br><span class="line">		//输出1-10，但到4执行continue</span><br><span class="line">		for(int a = 1; a&lt;=10; a++)&#123;		</span><br><span class="line">			if(a == 4)&#123;continue;&#125;</span><br><span class="line">			System.out.print(a);</span><br><span class="line">		&#125;</span><br><span class="line">		System.out.println();</span><br><span class="line">		System.out.println(&quot;------------------------&quot;);</span><br><span class="line">		</span><br><span class="line">		return;</span><br><span class="line">		//return之后的代码不会执行</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2019/07/13/流程控制/p8.jpg" alt></p>
+<img src="/2019/07/13/流程控制/流程控制/p8.jpg" align="left">
+
 <p>(3) 通过标记控制跳转语句</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">outer: for (int i = 0; i &lt;= 10; i++) &#123;</span><br><span class="line">	System.out.println(&quot;i = &quot;+i);</span><br><span class="line">	inner: for(int j = 1; j &lt;= 10; j++) &#123;</span><br><span class="line">		System.out.println(&quot;j = &quot;+j);</span><br><span class="line">		break outer;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 
