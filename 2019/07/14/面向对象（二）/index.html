@@ -29,25 +29,9 @@
 &emsp;&emsp;default(包（package）访问权限)：如果用于修饰类里的一个成员（包括成员变量、方法和构造器等）或者一个外部类，该成员可以被相同包下的其他类访问。
 &emsp;&emsp;protected（子类访问权限）：如果用于修饰一个成员（包括成员变量、方法和构造器等），该成员既可以被同一个包中的其他类访问，也可以被不同包中的子类访问。在通常情况下，如果使用protected来修饰一个方法，通常是希望其子类来重写这个方法。
 &emsp;&emsp;public（公共访问权限）：如果用于修饰一个成员（包括成员变量、方法和构造器等）或者一个外部类，该成员或外部类就可以被所有类访问，不管访问类和被访问类是否处于同一个包中，是否具有父子继承关系。
-<table bgcolor="black" align="center" cellspacing="2">
 
-<p>　访问控制级别<br>　<tr bgcolor="white"><br>　　　　<th></th><br>　　　　<th>private</th><br>　　　　<th>default</th><br>　　　　<th>protected</th><br>　　　　<th>public</th><br>　</tr><br>　<tr bgcolor="white"><br>　　　　<td>同一个类</td><br>　　　　<td>✔</td><br>　　　　<td>✔</td><br>　　　　<td>✔</td><br>　　　　<td>✔</td><br>　</tr><br>　<tr bgcolor="white"><br>　　　　<td>同一个包</td><br>　　　　<td></td><br>　　　　<td>✔</td><br>　　　　<td>✔</td><br>　　　　<td>✔</td></tr></p>
-
-<tr bgcolor="white">
-　　　　<td>子类中</td>
-　　　　<td></td>
-　　　　<td></td>
-　　　　<td>✔</td>
-　　　　<td>✔</td>
-</tr>
-<tr bgcolor="white">
-　　　　<td>全局范围</td>
-　　　　<td></td>
-　　　　<td></td>
-　　　　<td></td>
-　　　　<td>✔</td>
-</tr>
-</table>
+<p>访问控制级别</p>
+<table bgcolor="black" align="center" cellspacing="2" width="600" height="300"><tr bgcolor="white"><th></th><th>private</th><th>default</th><th>protected</th><th>public</th></tr><tr bgcolor="white"><td>同一个类</td><td>✔</td><td>✔</td><td>✔</td><td>✔</td></tr><tr bgcolor="white"><td>同一个包</td><td></td><td>✔</td><td>✔</td><td>✔</td></tr><tr bgcolor="white"><td>子类中</td><td></td><td></td><td>✔</td><td>✔</td></tr><tr bgcolor="white"><td>全局范围</td><td></td><td></td><td></td><td>✔</td></tr></table>
 
 <h3 id="3-package（包）"><a href="#3-package（包）" class="headerlink" title="(3) package（包）"></a>(3) package（包）</h3><blockquote>
 <p>包这种机制是为了防止命名冲突，访问控制，提供搜索和定位类、接口、枚举和注释等。</p>
